@@ -1,22 +1,39 @@
 CREATE DATABASE Roman
+GO
 
 USE Roman
+GO
 
-CREATE TABLE Professores
+CREATE TABLE TipoUsuario
 (
-	IdProfessor			INT PRIMARY KEY IDENTITY
-	,NomeProfessor		VARCHAR(120)
+	IdTipoUsuario			INT PRIMARY KEY IDENTITY
+	,TituloTipoUsuario		VARCHAR(120) NOT NULL
 );
+GO
 
-CREATE TABLE Projetos
+CREATE TABLE Usuario
 (
-	IdProjeto			INT PRIMARY KEY IDENTITY
-	,IdProfessor		INT FOREIGN KEY REFERENCES Professores(IdProfessor)
-	,NomeProjeto		VARCHAR(120)
+	IdUsuario			INT PRIMARY KEY IDENTITY
+	,IdTipoUsuario		INT FOREIGN KEY REFERENCES TipoUsuario(IdTipoUsuario)
+	,NomeUsuario		VARCHAR(120) NOT NULL
+	,Email				VARCHAR(120) NOT NULL
+	,Senha				VARCHAR(15) NOT NULL
 );
+GO
 
-CREATE TABLE Temas
+CREATE TABLE Tema
 (
 	IdTema				INT PRIMARY KEY IDENTITY
-	,NomeTema			VARCHAR(120)
+	,NomeTema			VARCHAR(120) NOT NULL
 );
+GO
+
+CREATE TABLE Projeto
+(
+	IdProjeto			INT PRIMARY KEY IDENTITY
+	,IdTema				INT FOREIGN KEY REFERENCES Tema(IdTema)
+	,IdUsuario			INT FOREIGN KEY REFERENCES Usuario(IdUsuario)
+	,NomeProjeto		VARCHAR(120) NOT NULL
+	,Descricao			VARCHAR(255)
+);
+GO

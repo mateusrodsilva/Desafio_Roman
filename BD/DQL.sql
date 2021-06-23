@@ -1,7 +1,9 @@
 USE Roman
 
-SELECT * FROM Professores;
+SELECT * FROM TipoUsuario;
 
-SELECT * FROM Projetos;
+SELECT * FROM Usuario;
 
-SELECT * FROM Temas;
+SELECT * FROM Tema;
+
+SELECT * FROM Projeto;
