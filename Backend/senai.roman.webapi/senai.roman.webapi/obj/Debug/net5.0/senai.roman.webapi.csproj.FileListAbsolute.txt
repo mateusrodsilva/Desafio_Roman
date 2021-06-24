@@ -65,3 +65,5 @@ C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.r
 C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.roman.webapi\obj\Debug\net5.0\ref\senai.roman.webapi.dll
 C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.roman.webapi\obj\Debug\net5.0\senai.roman.webapi.pdb
 C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.roman.webapi\obj\Debug\net5.0\senai.roman.webapi.genruntimeconfig.cache
+C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.roman.webapi\bin\Debug\net5.0\senai.roman.webapi.xml
+C:\Users\mrodr\Documents\GitHub\Desafio_Roman\Backend\senai.roman.webapi\senai.roman.webapi\obj\Debug\net5.0\senai.roman.webapi.xml
