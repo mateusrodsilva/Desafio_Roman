@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.roman.webapi</name>
+    </assembly>
+    <members>
+        <member name="M:senai.roman.webapi.Controllers.LoginController.Post(senai.roman.webapi.ViewModel.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="Login">Objeto login com o e-mail e a senha do usuário</param>
+            <returns>Token com as informações do usuário</returns>
+            dominio/api/Login
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.ProjetoController.Get">
+            <summary>
+            Lista todos os Projetos
+            </summary>
+            <returns>Lista com os Projetos</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.ProjetoController.Post(senai.roman.webapi.Domains.Projeto)">
+            <summary>
+            Método que cadastra uma novo Projeto
+            </summary>
+            <param name="NovoProjeto">Projeto que será Cadastrado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.ProjetoController.GetById(System.Int32)">
+            <summary>
+            Busca um Projeto pelo id 
+            </summary>
+            <param name="id">id do Projeto que será buscado</param>
+            <returns>Projeto Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.ProjetoController.Delete(System.Int32)">
+            <summary>
+            Deleta um Projeto existente
+            </summary>
+            <param name="id">Id do Projetoo que será deletado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.ProjetoController.Put(System.Int32,senai.roman.webapi.Domains.Projeto)">
+            <summary>
+            Atualiza um Projeto pelo Id
+            </summary>
+            <param name="id">Id do Projeto que será atualizado</param>
+            <param name="ProjetoAtt">Objeto ProjetoAtt com as informações atualizadas</param>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TemaController.Get">
+            <summary>
+            Lista todos os Temas 
+            </summary>
+            <returns>Lista com os Temas</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TemaController.Post(senai.roman.webapi.Domains.Tema)">
+            <summary>
+            Método que cadastra um Novo Tema
+            </summary>
+            <param name="NovoTema">Novo Tema que será cadastrado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TemaController.GetById(System.Int32)">
+            <summary>
+            Busca um Tema pelo id
+            </summary>
+            <param name="id">id do Tema que será buscado</param>
+            <returns>Tema Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TemaController.Delete(System.Int32)">
+            <summary>
+            Deleta um Tema existente
+            </summary>
+            <param name="id">Id do Tema que será deletado</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:senai.roman.webapi.Controllers.TemaController.Put(System.Int32,senai.roman.webapi.Domains.Tema)" -->
+        <member name="M:senai.roman.webapi.Controllers.TipoUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuários
+            </summary>
+            <returns>Status Code OK com Lista dos Tipos de Usuários</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TipoUsuarioController.Post(senai.roman.webapi.Domains.TipoUsuario)">
+            <summary>
+            Cadastra novo Tipo de Usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario com informações do novo Tipo de Usuário</param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TipoUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um Tipo de Usuário pelo Id passado na URL
+            </summary>
+            <param name="id">Id do Tipo Usuário que será buscada</param>
+            <returns>Tipo Usuario Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TipoUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um Tipo de Usuário existente
+            </summary>
+            <param name="id">Id do Tipo de Usuário que será deleteado</param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.TipoUsuarioController.Put(System.Int32,senai.roman.webapi.Domains.TipoUsuario)">
+            <summary>
+            Atualiza um Tipo de Usuário existente
+            </summary>
+            <param name="id">Id do Tipo de Usuário que será atualizado</param>
+            <param name="tipoUsuarioAtualizado">Objeto tipoUsuarioAtualizado com novos dados </param>
+            <returns>Status Code 204</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.UsuarioController.Get">
+            <summary>
+            Lista todos os usuários cadastrados
+            </summary>
+            <returns>Status Code Ok e Lista dos usuários cadastrados</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.UsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um usuário pelo Id passado na URL
+            </summary>
+            <param name="id">Id do usuário que será buscado</param>
+            <returns>Usuario Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.UsuarioController.Post(senai.roman.webapi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que contém as informações do usuário que será cadastrado</param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.UsuarioController.Put(System.Int32,senai.roman.webapi.Domains.Usuario)">
+            <summary>
+            Atualiza um Usuario Existente
+            </summary>
+            <param name="id">Id do Usuário que será atualizado</param>
+            <param name="usuarioAtualizado">Objeto usuarioAtualizado com as novas informações do Usuário</param>
+            <returns>Status Code 204</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário existente 
+            </summary>
+            <param name="id">Id do Usuário que será deletado</param>
+            <returns>Status Code 204</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IProjetoRepository.Cadastrar(senai.roman.webapi.Domains.Projeto)">
+            <summary>
+            Método que cadastra uma novo Projeto
+            </summary>
+            <param name="NovoProjeto">Projeto que será Cadastrado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IProjetoRepository.Listar">
+            <summary>
+            Lista todos os Projetos
+            </summary>
+            <returns>Lista com os Projetos</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IProjetoRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Projeto pelo id 
+            </summary>
+            <param name="id">id do Projeto que será buscado</param>
+            <returns>Projeto Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IProjetoRepository.Atualizar(System.Int32,senai.roman.webapi.Domains.Projeto)">
+            <summary>
+            Atualiza um Projeto pelo Id
+            </summary>
+            <param name="id">Id do Projeto que será atualizado</param>
+            <param name="ProjetoAtt">Objeto ProjetoAtt com as informações atualizadas</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IProjetoRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Projeto existente
+            </summary>
+            <param name="id">Id do Projetoo que será deletado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITemaRepository.Cadastrar(senai.roman.webapi.Domains.Tema)">
+            <summary>
+            Método que cadastra um Novo Tema
+            </summary>
+            <param name="NovoTema">Novo Tema que será cadastrado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITemaRepository.Listar">
+            <summary>
+            Lista todos os Temas 
+            </summary>
+            <returns>Lista com os Temas</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITemaRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Tema pelo id
+            </summary>
+            <param name="id">id do Tema que será buscado</param>
+            <returns>Tema Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITemaRepository.Atualizar(System.Int32,senai.roman.webapi.Domains.Tema)">
+            <summary>
+            Atualiza um Tema pelo Id
+            </summary>
+            <param name="id">Id do Tema que será atualizado</param>
+            <param name="TemaAtt">Objeto TemaAtt com as informações atualizadas</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITemaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Tema existente
+            </summary>
+            <param name="id">Id do Tema que será deletado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITipoUsuarioRepository.Cadastrar(senai.roman.webapi.Domains.TipoUsuario)">
+            <summary>
+            Método que cadastra uma novo Tipo de Usuario
+            </summary>
+            <param name="NovoTipoUsuario">Objeto Tipo de Usuário que será buscado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os Tipos de Usuários
+            </summary>
+            <returns>Lista com os Tipos de Usuários</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Tipo de Usuário pelo id 
+            </summary>
+            <param name="id">id do Tipo de Usuário que será buscado</param>
+            <returns>Tipo de Usuário Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITipoUsuarioRepository.Atualizar(System.Int32,senai.roman.webapi.Domains.TipoUsuario)">
+            <summary>
+            Atualiza um Tipo de Usuário pelo Id
+            </summary>
+            <param name="id">Id do Tipo de Usuário que será atualizado</param>
+            <param name="TipoUsuarioAtt">Objeto TipoUsuarioAtt com as informações atualizadas</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.ITipoUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Tipo de Usuário existente
+            </summary>
+            <param name="id">Id do Tipo de Usuário que será deletado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.Cadastrar(senai.roman.webapi.Domains.Usuario)">
+            <summary>
+            Método que cadastra uma novo Usuario
+            </summary>
+            <param name="NovoUsuario">Objeto Usuario que será cadastrado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os Usuários
+            </summary>
+            <returns>Lista com os Usuários</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Usuário pelo id 
+            </summary>
+            <param name="id">id do Usuário que será buscado</param>
+            <returns>Usuário Buscado</returns>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.Atualizar(System.Int32,senai.roman.webapi.Domains.Usuario)">
+            <summary>
+            Atualiza um Usuário pelo Id
+            </summary>
+            <param name="id">Id do Usuário que será atualizado</param>
+            <param name="UsuarioAtt">Objeto UsuarioAtt com as informações atualizadas</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Usuário existente
+            </summary>
+            <param name="id">Id do Usuário que será deletado</param>
+        </member>
+        <member name="M:senai.roman.webapi.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">e-mail do usuário</param>
+            <param name="senha">senha do usuário</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+    </members>
+</doc>
