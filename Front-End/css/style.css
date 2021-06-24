@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@font-face{ 
+    Font-family: "SeoulNamsan CBL";
+    src: local("C:\Users\fic\Desktop\Desafio_Roman\Front-End\Fontes");
+}
+*{
+    background-color: #221E1E;
+}
+.logo{
+    color: #C52020;
+    font-family: Rock Salt;
+    font-size: 36px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.area-login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.area-login h2{
+    font-family: SeoulNamsan CBL;
+    color: #C4C4C4;
+    font-size: 36px;
+}
+.area-inputs input{
+    background-color: #EDE9DD;
+    width: 299px;
+    height: 52px;
+}
+.area-inputs h3{
+    font-family: SeoulNamsan CBL;
+    font-size: 12px;
+    color: #ffffff;
+}
+.div-button button{
+    margin-top: 60px;
+    background-color: #175D84;
+    border-radius: 2px;
+    font-family: SeoulNamsan CBL;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    width: 180px;
+    height: 58px;
+    margin: 20px;
+    margin-top: 30px;
+}
+.div-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
